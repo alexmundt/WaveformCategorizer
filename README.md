@@ -34,7 +34,7 @@ After pressing the `keyboard navigation mode` button the interface will react to
 - `1` to `5` for different quality levels
 - `Left` and `Right` arrow keys for switching between waveforms quickly
 
-The `Save` and `Load` buttons will either store the current categorizations in a pandas pickle file.
+The `Save` and `Load` buttons will either store or load the current categorizations to or from a pandas pickle file.
 
 
 # Example image
