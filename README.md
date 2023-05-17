@@ -1,0 +1,2 @@
+# GUI-Data-Categorizer
+# WaveformCategorizer
