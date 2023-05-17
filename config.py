@@ -31,7 +31,8 @@ class Configuration(object):
         value = str(value)
         try:
             self.config.set("OPTIONS", option, value)
-        except:
+        except configparser.NoSectionError:
+            print("NoSection Error Exception caught")
             self.config["OPTIONS"] = {}
             self.config.set("OPTIONS", option, value)
 
