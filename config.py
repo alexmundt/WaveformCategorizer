@@ -10,7 +10,7 @@ class Configuration(object):
         self.filename = filename
         try:
             self.read_file(self.filename)
-            print("File read succesfully.")
+            print("Configuration file read succesfully.")
         except Exception as ex:
             print(ex)
             print(f"Config file not read succesfully: {ex}\nGenerating generic"+
@@ -29,7 +29,12 @@ class Configuration(object):
         """ set option in the config to value
         """
         value = str(value)
-        self.config.set("OPTIONS", option, value)
+        try:
+            self.config.set("OPTIONS", option, value)
+        except:
+            self.config["OPTIONS"] = {}
+            self.config.set("OPTIONS", option, value)
+
 
     def read_file(self, filename=None):
         """ reading a configfile
