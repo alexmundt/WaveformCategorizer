@@ -1,6 +1,13 @@
 # WaveformCategorizer
 This repo contains python code for categorizing waveforms quickly.
 
+## Needed packages
+- numpy
+- matplotlib
+- scipy
+- tqdm
+- obspy
+
 ## Usage
 To use run
 
