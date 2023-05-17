@@ -29,7 +29,7 @@ class Configuration(object):
         """ set option in the config to value
         """
         value = str(value)
-        self.config["OPTIONS"][option] = value
+        self.config.set("OPTIONS", option, value)
 
     def read_file(self, filename=None):
         """ reading a configfile

@@ -243,8 +243,8 @@ class MainFrame(ttk.Frame):
         highfreq = self.highfreqentry.get_value()
         order = self.orderEntry.get_value()
         self.config.set_value("order", order)
-        self.config.set_value("highfreq", highfreq)
-        self.config.set_value("lowfreq", lowfreq)
+        self.config.set_value("highpass", highfreq)
+        self.config.set_value("lowpass", lowfreq)
         self.config.write_to_file()
 
 
