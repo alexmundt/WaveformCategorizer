@@ -252,7 +252,7 @@ class MainFrame(ttk.Frame):
         self.focus_set()
 
     def keypress_event(self, event):
-        print(event)
+        # print(event)
         # self.__update_figure()
         # try:
         #     if event.keysym == "Left":
